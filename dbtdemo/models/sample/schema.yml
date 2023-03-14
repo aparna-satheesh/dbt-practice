@@ -6,4 +6,4 @@ models:
       - name: cut
         tests:
         - accepted_values:
-          ['Premium', 'Ideal', 'Good','Very Good','Fair']
+          values: ['Premium', 'Ideal', 'Good','Very Good','Fair']
