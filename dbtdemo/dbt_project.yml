@@ -1,5 +1,7 @@
 name: dbtdem0
 version: 1.0.0
+config-version: 2
+
 profile: 'dbtdemo'
 
 model-paths: ["models"]
