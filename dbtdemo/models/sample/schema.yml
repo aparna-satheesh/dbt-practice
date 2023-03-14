@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: diamonds_four_cs.sql
+    columns:
+      - name: col1
+        # tests:
+        #   - unique
+        #   - not_null 
+  - name: diamonds_list_colors
+    columns:
+      - name: col1
+        # tests:
+        #   - unique
+        #   - not_null
+      - name: col2
+        # tests:
+        #   - not_null
+  -name: diamonds_prices
+    columns:
+      -name: col1
+        # tests:
+        #   -unique
