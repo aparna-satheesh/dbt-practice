@@ -11,9 +11,9 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-source-paths:
-  - models
-  - data
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
 
 target-path: target
 
