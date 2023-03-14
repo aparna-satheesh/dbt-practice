@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: diamonds
+    database: core  
+    tables:
+      - name: diamonds_four_cs
+      - name: diamonds_list_colors
+      - name: diamonds_prices
