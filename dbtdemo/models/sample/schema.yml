@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: diamonds_four_cs.sql
+  - name: diamonds_four_cs
     columns:
       - name: cut
         tests:
