@@ -3,6 +3,6 @@
   file_format='delta'
 ) }}
 
-select carat, cut, color, clarity
+select carat, cut, color, clarity,depth
 from {{ source('default', 'diamonds') }}
 
