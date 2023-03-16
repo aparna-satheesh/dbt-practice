@@ -1,4 +1,4 @@
 select color,cut, avg(price)as price
-from diamonds
+from {{ source('default', 'diamonds') }}
 group by color,cut
 order by price desc
