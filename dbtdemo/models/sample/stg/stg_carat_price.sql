@@ -15,7 +15,7 @@ final as
         cut from cc.cut
         price from amt.price
 
-    from cc join amt using (_c0)
+    from cc join amt using (id)
 )
 
 select * from final
