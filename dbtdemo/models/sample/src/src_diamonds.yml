@@ -1,8 +1,6 @@
 version: 2
 
 sources:
-  - name: diamonds
+  - name: default
     tables:
-      - name: diamonds_four_cs
-      - name: diamonds_list_colors
-      - name: diamonds_prices
+      - name: diamonds

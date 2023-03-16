@@ -4,4 +4,5 @@
 ) }}
 
 select carat, cut, color, clarity
-from diamonds
+from {{ source('default', 'diamonds') }}
+
