@@ -11,9 +11,8 @@ amt as
 final as 
 (
     select 
-        carat from cc.carat,
-        cut from cc.cut,
-        price from amt.price
+        carat,cut from cc
+        price from amt
 
     from cc join amt using (id)
 )
