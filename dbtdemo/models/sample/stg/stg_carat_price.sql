@@ -1,5 +1,5 @@
 with cc as 
 (
-    select carat, cut from diamonds_four_cs
+    select carat, cut from {{ ref('diamonds_four_cs') }}
 )
 select * from cc 
