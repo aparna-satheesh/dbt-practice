@@ -19,5 +19,4 @@ target-path: target
 
 models:
   dbtdemo:
-    # Config indicated by + and applies to all files under models/example/
     +materialized: view
