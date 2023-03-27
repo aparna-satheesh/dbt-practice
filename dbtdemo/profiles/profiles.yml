@@ -1,4 +1,4 @@
-dbt_sampledev:
+dbtdemo:
   outputs:
     dev:
       catalog: null
