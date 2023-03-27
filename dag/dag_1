@@ -5,23 +5,23 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.utils.dates import datetime
 from airflow.utils.dates import timedelta
-profiles_dir='/home/xavier/airflow/airflow_test/profiles/'
+profiles_dir="C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo\profiles"
 
 default_args = {
-    'dir': '/home/xavier/airflow/airflow_test/',
-    'start_date': datetime(2023, 3, 11),
-    'end_date': datetime(2023, 3, 20),
+    'dir': 'C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo',
+    'start_date': datetime(2023, 3, 27),
+    'end_date': datetime(2023, 3, 29),
 }
 
 dag = DAG(
-    'dbt_dag',
+    'dag_1',
     default_args=default_args,
-    description='A dbt wrapper for airflow',
+    description='A sample dag- dag_1',
     schedule_interval=timedelta(days=1),
 )
 
 def load_manifest():
-    local_filepath = "/home/xavier/airflow/dbt/target/manifest.json"
+    local_filepath = "C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo\target\manifest.json"
     with open(local_filepath) as f:
         data = json.load(f)
 
@@ -29,7 +29,7 @@ def load_manifest():
 
 def make_dbt_task(node, dbt_verb):
     """Returns an Airflow operator either run and test an individual model"""
-    DBT_DIR = "/home/xavier/airflow/dbt"
+    DBT_DIR = "C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo"
     GLOBAL_CLI_FLAGS = "--no-write-json"
     model = node.split(".")[-1]
 
