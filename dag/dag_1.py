@@ -5,10 +5,10 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.utils.dates import datetime
 from airflow.utils.dates import timedelta
-profiles_dir="C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo\profiles"
+profiles_dir="C:/Users/AparnaMenonS/my_dbtdemo/dbtdemo/profiles"
 
 default_args = {
-    'dir': 'C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo',
+    'dir': 'C:/Users\AparnaMenonS/my_dbtdemo/dbtdemo',
     'start_date': datetime(2023, 3, 27),
     'end_date': datetime(2023, 3, 29),
 }
@@ -21,7 +21,7 @@ dag = DAG(
 )
 
 def load_manifest():
-    local_filepath = "C:\Users\AparnaMenonS\my_dbtdemo\dbtdemo\target\manifest.json"
+    local_filepath = "C:/Users/AparnaMenonS/my_dbtdemo/dbtdemo/target/manifest.json"
     with open(local_filepath) as f:
         data = json.load(f)
 
